@@ -1,1 +1,2 @@
 # CordiaWebsite
+#the static page
