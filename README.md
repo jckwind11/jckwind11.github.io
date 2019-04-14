@@ -1,2 +1,2 @@
 # CordiaWebsite
-#the static page
+the static page of cordia lol
