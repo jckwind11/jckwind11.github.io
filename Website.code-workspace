@@ -5,6 +5,10 @@
 		}
 	],
 	"settings": {
+		"html.format.endWithNewline": true,
+		"html.format.indentInnerHtml": true,
+		"html.format.indentHandlebars": true,
+		"html.format.preserveNewLines": false,
 		"scss.validate": false
 	}
 }
