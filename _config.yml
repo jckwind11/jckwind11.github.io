@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jckwind.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "Cordia"
 github_username:  "Jckwind"
+linkedin_username:  "jckwind11"
 
 # Build settings
 markdown: kramdown
@@ -37,3 +38,4 @@ theme: minima
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+port: 4444
