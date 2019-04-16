@@ -1,21 +1,97 @@
 $sarala: 'Sarala', sans-serif;
-body {
-    background-image: url('/assets/images/Showcase1.png');
-    height: 100%;
-    overflow: hidden;
-    background-size: cover;
-    font-size: 2em;
+
+body{
     font-family: $sarala;
     color: #ffffff;
+}
+
+html {
     background-color: #2f2fa2;
-    -webkit-text-size-adjust: 100%;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column; 
+    background-image: url('/assets/images/ShowcaseV1.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background: #F64C72;
+    border: 0;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 601px) {
+    .welcome {  font-size: 3em;  }
+
+    .infoLabel {  
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 7.5% 50% 0px 13%;
+    }
+
+    html{ 
+        -webkit-background-size: auto 100sv;
+        background-size: auto 100sv;
+    }
+}
+  
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+
+    .welcome {  font-size: 2em; }
+
+    .infoLabel { 
+        position: center;
+        font-size: 1em; 
+    }
+
+    .container {
+        padding: 25% 20% 0 0;
+    }
+
+    html { 
+        -webkit-background-size: 100%;
+        background-size: auto 100%; 
+    }
+
+    .downloadBtn { margin-left: 13%; }
+}
+
+.welcome {
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0px 0px 0.3em #000000;
+}
+
+.infoLabel {
+    color: #ffffff;
+    text-shadow: 0px 0px 0.3em #000000;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
     
 .site-header { display: none}
     
 .site-footer { display: none}
 
-a:link { color: #F64C72}
+a.downloadBtn {
+    color: #fff;
+    border-radius: 0.2em;
+    font-family: $sarala;
+    border: 0;
+    background-color: #F64C72;
+    box-shadow: 0px 0px 3em #000000;
+    padding: 14px 40px;
+    font-size: 1em;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .fa-apple { margin-left: 5px; }
+
+  .buttonHolder { text-align: center; }
