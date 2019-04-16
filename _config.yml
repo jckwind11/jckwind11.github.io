@@ -24,8 +24,7 @@ github_username:  jckwind
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
-plugins: none
+theme: minima
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
