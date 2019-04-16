@@ -18,9 +18,9 @@ email: contact@cordia.app
 description: >- # this means to ignore newlines until "baseurl:"
   This is Social Media for music. No algoriths, no AI, just you and music.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cordia.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jckwind.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Cordia
-github_username:  jckwind11
+github_username:  jckwind
 
 # Build settings
 markdown: kramdown
