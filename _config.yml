@@ -24,7 +24,7 @@ github_username:  jckwind11
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
 
 # Exclude from processing.
