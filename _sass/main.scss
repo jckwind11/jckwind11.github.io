@@ -104,7 +104,7 @@ a.downloadBtn {
 }
 
 .fa-reddit, .fa-envelope, .fa-linkedin, .fa-twitter {
-    padding: 0.75em 0.75em;
+    padding: 0.75em;
     font-size: 1.3em;
     text-align: center;
     text-decoration: none;
@@ -127,4 +127,7 @@ a.downloadBtn {
     left: 0;
     padding: 1rem;
     text-align: center;
+}
+a:hover{
+    opacity: 0.8;
 }
