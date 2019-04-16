@@ -26,7 +26,8 @@ linkedin_username:  "jckwind11"
 # Build settings
 markdown: kramdown
 theme: minima
-
+plugins:
+- jekyll-seo-tag
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
