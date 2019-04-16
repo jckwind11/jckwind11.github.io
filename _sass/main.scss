@@ -24,13 +24,9 @@ html {
 @media screen and (min-width: 601px) {
     .welcome {  font-size: 3em;  }
 
-    .infoLabel {  
-        font-size: 1.8em;
-    }
+    .infoLabel { font-size: 1.8em; }
 
-    .container {
-        padding: 7.5% 50% 0px 13%;
-    }
+    .container { padding: 7.5% 50% 0px 13%; }
 
     html{ 
         -webkit-background-size: auto 100sv;
@@ -43,14 +39,9 @@ html {
 
     .welcome {  font-size: 2em; }
 
-    .infoLabel { 
-        position: center;
-        font-size: 1em; 
-    }
+    .infoLabel { font-size: 0.8em;  }
 
-    .container {
-        padding: 25% 20% 0 0;
-    }
+    .container { padding: 25% 20% 0 0; }
 
     html { 
         -webkit-background-size: 100%;
@@ -68,10 +59,11 @@ html {
 
 .infoLabel {
     color: #ffffff;
-    text-shadow: 0px 0px 0.3em #000000;
+    text-shadow: 0px 0px 2px #000000;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 2em;
     letter-spacing: 1px;
+    margin: 20px 0;
 }
     
 .site-header { display: none}
