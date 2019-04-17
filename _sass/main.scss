@@ -1,6 +1,7 @@
 $sarala: 'Sarala', sans-serif;
 
 body{
+    height: 110%;
     font-family: $sarala;
     color: #ffffff;
 }
@@ -11,7 +12,6 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-repeat:no-repeat;
-    overflow-y: scroll;
 }
 
 .divider {
@@ -20,6 +20,10 @@ html {
     background: #F64C72;
     border: 0;
     margin-left: 0;
+}
+.container {
+    position: absolute;
+    height: 100%;
 }
 
 @media screen and (min-width: 601px) {
