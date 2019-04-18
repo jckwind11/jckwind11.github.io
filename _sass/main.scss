@@ -114,7 +114,16 @@ a.downloadBtn {
 a:hover{
     opacity: 0.8;
 }
-
+.tosButton {
+    color: #fff;
+    border:none;
+    font-family: $sarala;
+    padding: 14px 40px;
+    margin-left: 5%;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
 //Different Screen Sizes Info
 
 //iphone landscape
