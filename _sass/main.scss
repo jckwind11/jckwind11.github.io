@@ -1,9 +1,16 @@
 $sarala: 'Sarala', sans-serif;
 
 body{
-    height: auto;
     font-family: $sarala;
     color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 html {
@@ -13,6 +20,11 @@ html {
     background-attachment: fixed;
     background-repeat:no-repeat;
 }
+#section {
+    -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 
 .divider {
     width: 80%;
@@ -20,40 +32,6 @@ html {
     background: #F64C72;
     border: 0;
     margin-left: 0;
-}
-.container {
-    position: absolute;
-    height: 100%;
-}
-
-@media screen and (min-width: 601px) {
-    .welcome {  font-size: 3em;  }
-
-    .infoLabel { font-size: 1.8em; }
-
-    .container { padding: 7.5% 50% 0px 13%; }
-
-    html{ 
-        -webkit-background-size: auto;
-        background-size: auto 100sv;
-    }
-}
-  
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-
-    .welcome {  font-size: 2em; }
-
-    .infoLabel { font-size: 0.8em;  }
-
-    .container { padding: 25% 20% 0 0; }
-
-    html { 
-        -webkit-background-size: 100%;
-        background-size: auto 100%; 
-    }
-
-    .downloadBtn { margin-left: 13%; }
 }
 
 .welcome {
@@ -64,7 +42,7 @@ html {
 
 .infoLabel {
     color: #ffffff;
-    text-shadow: 0px 0px 2px #000000;
+    text-shadow: 0px 0px 0.7em #000000;
     font-weight: 500;
     line-height: 2em;
     letter-spacing: 1px;
@@ -79,11 +57,11 @@ a.downloadBtn {
     font-family: $sarala;
     border: 0;
     background-color: #F64C72;
-    box-shadow: 0px 0px 3em #000000;
+    box-shadow: 0px 0px 2em #000000;
     padding: 14px 40px;
-    font-size: 1em;
-    margin-top: 20px;
+    margin-top: 1.4em;
     text-decoration: none;
+    text-align: center;
     display: inline-block;
 }
 
@@ -109,7 +87,7 @@ a.downloadBtn {
 
 .fa-reddit, .fa-envelope, .fa-linkedin, .fa-twitter {
     padding: 0.75em;
-    font-size: 1.3em;
+    font-size: 100%;
     text-align: center;
     text-decoration: none;
     margin-right: 5px;
@@ -117,21 +95,75 @@ a.downloadBtn {
     color: white;
 }
 
-
 .fa-apple { 
     margin-left: 5px; 
 }
 
-.buttonHolder { text-align: center; }
+.buttonHolder { 
+    text-align: center; 
+    right: 0;
+    left: 0;
+}
 
 .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    
     padding: 1rem;
     text-align: center;
 }
+
 a:hover{
     opacity: 0.8;
 }
+
+//Different Screen Sizes Info
+
+//iphone landscape
+ 
+@media screen and (max-width : 767px) 
+and (orientation : portrait) {
+
+    .welcome {  font-size: 2em; }
+
+    .infoLabel { font-size: 0.8em;  }
+
+    .container { padding: 15% 20% 0 0; }
+
+    html { 
+        -webkit-background-size: 100%;
+        background-size: auto 100%; 
+    }
+
+    .downloadBtn { margin-left: 13%; }
+
+}
+
+@media screen and (max-width: 767px){
+    .welcome {  font-size: 2em; }
+
+    .infoLabel { font-size: 0.9em;  }
+
+    .container { padding: 10vh 20% 0 0; }
+
+    html { 
+        -webkit-background-size: 100%;
+        background-size: auto 100%; 
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .welcome {  font-size: 2.5em;  }
+
+    .infoLabel { font-size: 1.2em; }
+
+    .container { padding: 7.5% 40vw 0px 13%; }
+
+    .downloadBtn { font-size: 1.5em;}
+
+    html{ 
+        -webkit-background-size: auto;
+        background-size: auto 100sv;
+    }
+
+}
+
