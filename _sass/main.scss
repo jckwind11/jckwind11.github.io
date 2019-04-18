@@ -36,10 +36,14 @@ html {
     background: #F64C72;
     border: 0;
 }
+
 .divider-Home {
     margin-left: 0;
 }
 
+.divider-User-Agreement {
+    width: 50%;
+}
 
 .welcome {
     font-weight: 500;
@@ -139,14 +143,14 @@ a:hover{
 }
 
 .TOSHeader {
-    font-size: 1.8em;
+    font-size: auto;
     text-align: center;
     margin-top: 0;
 }
 
 .TOS-Preface {
-    font-size: 0.9em;
-    width: 80%;
+    font-size: auto;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -162,6 +166,14 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    height: auto;
+}
+
+.TOS-User-Agreement {
+    font-size: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 //Different Screen Sizes Info
@@ -218,10 +230,6 @@ a:hover{
     }
     .TOS-Holder { width: 80%; }
 
-    .TOS-Header { font-size: 2.3em; }
-
-    .TOS-Preface { font-size: 1.2em; }
-
 }
 
 @media screen and (min-width : 768px) and (max-width : 812px) and (orientation : landscape){
@@ -265,7 +273,8 @@ a:hover{
 
     .TOS-Header { font-size: 2.1em; }
 
-    .TOS-Preface { font-size: 1.3em; }
+    .TOS-Preface, .TOS-User-Agreement { font-size: 1.3em; }
+
 }
 
 @media screen and (min-width: 1024px) and (orientation : portrait){
@@ -293,5 +302,5 @@ a:hover{
 
     .TOS-Header { font-size: 2.9em; }
 
-    .TOS-Preface { font-size: 2em; }
+    .TOS-Preface, .TOS-User-Agreement { font-size: 2em; }
 }
