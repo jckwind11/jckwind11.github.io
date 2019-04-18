@@ -169,9 +169,22 @@ a:hover{
     height: auto;
 }
 
-.TOS-User-Agreement {
+.TOS-User-Agreement-Body {
     font-size: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 300;
+    margin-top: 0;
     width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TOS-User-Agreement-Header {
+    font-size: auto;
+    margin-top: 0;
+    width: 90%;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -271,9 +284,10 @@ a:hover{
 
     .TOS-Holder { width: 70%; }
 
-    .TOS-Header { font-size: 2.1em; }
+    .TOS-Header, .TOS-User-Agreement-Header { font-size: 2.1em; }
 
-    .TOS-Preface, .TOS-User-Agreement { font-size: 1.3em; }
+    .TOS-Preface, .TOS-User-Agreement-Body { font-size: 1.3em; }
+
     .TOS-logo {width: 65%;}
 
 }
@@ -301,7 +315,7 @@ a:hover{
 
     .TOS-Holder { width: 75%; }
 
-    .TOS-Header { font-size: 2.9em; }
+    .TOS-Header, .TOS-User-Agreement-Header { font-size: 2.9em; }
 
-    .TOS-Preface, .TOS-User-Agreement { font-size: 2em; }
+    .TOS-Preface, .TOS-User-Agreement-Body { font-size: 2em; }
 }
