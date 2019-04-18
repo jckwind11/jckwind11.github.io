@@ -13,13 +13,14 @@ body{
     min-height: 110vh;
 }
 
-html {
-    background-color: #2f2fa2;
+#home {
     background-image: url('/assets/images/ShowcaseV1.png');
     background-position: center;
     background-attachment: fixed;
     background-repeat:no-repeat;
-    
+}
+html {
+    background-color: #2f2fa2;
 }
 
 #section {
