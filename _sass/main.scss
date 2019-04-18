@@ -85,7 +85,7 @@ a.downloadBtn {
     background-color: #ea4335;
 }
 
-.fa-reddit, .fa-envelope, .fa-linkedin, .fa-twitter {
+.fa, .fab:not(.fa-apple) {
     padding: 0.75em;
     font-size: 100%;
     text-align: center;
@@ -96,7 +96,7 @@ a.downloadBtn {
 }
 
 .fa-apple { 
-    margin-left: 5px; 
+    margin-left: 0.5em; 
 }
 
 .buttonHolder { 
@@ -106,8 +106,8 @@ a.downloadBtn {
 }
 
 .footer {
-    
     padding: 1rem;
+    padding-top: 2em;
     text-align: center;
 }
 
@@ -119,12 +119,11 @@ a:hover{
 
 //iphone landscape
  
-@media screen and (max-width : 767px) 
-and (orientation : portrait) {
+@media screen and (max-width : 767px) and (orientation : portrait) {
 
     .welcome {  font-size: 2em; }
 
-    .infoLabel { font-size: 0.8em;  }
+    .infoLabel { font-size: 0.9em;  }
 
     .container { padding: 15% 20% 0 0; }
 
@@ -133,16 +132,14 @@ and (orientation : portrait) {
         background-size: auto 100%; 
     }
 
-    .downloadBtn { margin-left: 13%; }
-
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) and (orientation : landscape){
     .welcome {  font-size: 2em; }
 
     .infoLabel { font-size: 0.9em;  }
 
-    .container { padding: 10vh 20% 0 0; }
+    .container { padding: 10vh 35% 0 0; }
 
     html { 
         -webkit-background-size: 100%;
@@ -151,12 +148,50 @@ and (orientation : portrait) {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width : 768px) and (max-width : 1023px)  {
+    .welcome {  font-size: 2.7em;  }
+
+    .infoLabel { font-size: 1.4em; }
+
+    .container { padding: 7.5% 35vw 0px 13%; }
+
+    .downloadBtn { font-size: 1.5em;}
+
+    html{ 
+        -webkit-background-size: auto;
+        background-size: auto 100sv;
+    }
+    .fa, .fab:not(.fa-apple) {
+        font-size: 150%;
+    }
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 812px) and (orientation : landscape){
+    .welcome {  font-size: 2.1em;  }
+
+    .infoLabel { font-size: 1.1em; }
+
+    .container { padding: 7.5% 35vw 0px 13%; }
+
+    .downloadBtn { font-size: 1.2em;}
+
+    html{ 
+        -webkit-background-size: auto;
+        background-size: auto 100sv;
+    }
+    .fa, .fab:not(.fa-apple) {
+        font-size: 150%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
     .welcome {  font-size: 2.5em;  }
 
     .infoLabel { font-size: 1.2em; }
 
-    .container { padding: 7.5% 40vw 0px 13%; }
+    .container { padding: 10% 40vw 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
 
@@ -165,5 +200,26 @@ and (orientation : portrait) {
         background-size: auto 100sv;
     }
 
+    .fa, .fab:not(.fa-apple) {
+        font-size: 150%;
+    }
 }
 
+@media screen and (min-width: 1024px) and (orientation : portrait){
+    .welcome {  font-size: 3em;  }
+
+    .infoLabel { font-size: 1.6em; }
+
+    .container { padding: 20% 35vw 0px 13%; }
+
+    .downloadBtn { font-size: 1.5em;}
+
+    html{ 
+        -webkit-background-size: auto;
+        background-size: auto 100sv;
+    }
+
+    .fa, .fab:not(.fa-apple) {
+        font-size: 150%;
+    }
+}
