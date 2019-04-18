@@ -120,8 +120,10 @@ a:hover{
     font-family: $sarala;
     padding: 14px 40px;
     margin-left: 5%;
+    margin-right: 5%;
     text-decoration: none;
-    display: inline-block;
+    text-align: center;
+    display: block;
     cursor: pointer;
 }
 //Different Screen Sizes Info
