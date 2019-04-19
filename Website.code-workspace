@@ -9,6 +9,7 @@
 		"html.format.indentInnerHtml": true,
 		"html.format.indentHandlebars": true,
 		"html.format.preserveNewLines": false,
-		"scss.validate": false
+		"scss.validate": false,
+		"git.postCommitCommand": "push"
 	}
 }
