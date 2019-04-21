@@ -2,7 +2,6 @@ $sarala: 'Sarala', sans-serif;
 
 body{
     font-family: $sarala;
-    color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,12 +152,15 @@ a:hover{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    color: gray;
 }
 
 .TOS-Holder {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: white;
+    outline: 3px solid #F64C72;
 }
 
 .TOS-logo {
@@ -178,7 +180,7 @@ a:hover{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    color: #E8E8E8;
+    color: #696969;
 }
 
 .TOS-User-Agreement-Header {
@@ -188,6 +190,7 @@ a:hover{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    color: black;
 }
 
 .EffectiveLabel {
