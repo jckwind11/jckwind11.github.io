@@ -124,11 +124,11 @@ a.downloadBtn {
     text-align: center;
 }
 
-a:hover{
+a:not(.copyright):hover{
     opacity: 0.8;
 }
 
-.tosButton {
+.footerLabel{
     color: #fff;
     border:none;
     font-family: $sarala;
@@ -137,8 +137,11 @@ a:hover{
     padding-top: 1em;
     text-decoration: none;
     text-align: center;
-    cursor: pointer;
     display: inline-block;
+}
+
+.tosButton {
+    cursor: pointer;
 }
 
 .TOSHeader {
