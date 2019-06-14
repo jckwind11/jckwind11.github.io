@@ -75,6 +75,20 @@ a.downloadBtn {
     display: inline-block;
 }
 
+a.downloadBtn2 {
+    color: #fff;
+    border-radius: 0.2em;
+    font-family: $sarala;
+    border: 0;
+    background-color: #89CFF0;
+    box-shadow: 0px 0px 2em #000000;
+    padding: 14px 40px;
+    margin-top: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
 .redditButton, .twitterButton, .linkedButton, .mailButton {
     text-decoration: none;
 }
