@@ -50,14 +50,6 @@ html {
     text-shadow: 0px 0px 0.3em #000000;
 }
 
-.fatherwelcome {
-    font-size: 2em;
-    font-weight: 500;
-    color: #000000;
-    text-shadow: 0px 0px 0.3em #000000;
-    text-align: center;
-}
-
 .infoLabel {
     color: #ffffff;
     text-shadow: 0px 0px 0.7em #000000;
@@ -230,7 +222,7 @@ a:not(.copyright):hover{
  
 @media screen and (max-width : 767px) and (orientation : portrait) {
 
-    .welcome, .fatherwelcome {  font-size: 2em; }
+    .welcome {  font-size: 2em; }
 
     .infoLabel { font-size: 0.9em;  }
 
@@ -244,7 +236,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (max-width: 767px) and (orientation : landscape){
-    .welcome, .fatherwelcome {  font-size: 2em; }
+    .welcome {  font-size: 2em; }
 
     .infoLabel { font-size: 0.9em;  }
 
@@ -261,7 +253,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (min-width : 768px) and (max-width : 1023px)  {
-    .welcome, .fatherwelcome {  font-size: 2.7em;  }
+    .welcome {  font-size: 2.7em;  }
 
     .infoLabel { font-size: 1.4em; }
 
@@ -281,7 +273,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (min-width : 768px) and (max-width : 812px) and (orientation : landscape){
-    .welcome, .fatherwelcome {  font-size: 2.1em;  }
+    .welcome {  font-size: 2.1em;  }
 
     .infoLabel { font-size: 1.1em; }
 
@@ -300,7 +292,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (min-width: 1024px) {
-    .welcome, .fatherwelcome {  font-size: 2.5em;  }
+    .welcome {  font-size: 2.5em;  }
 
     .infoLabel { font-size: 1.2em; }
 
@@ -328,7 +320,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (min-width: 1024px) and (orientation : portrait){
-    .welcome, .fatherwelcome {  font-size: 3em;  }
+    .welcome {  font-size: 3em;  }
 
     .infoLabel { font-size: 1.6em; }
 
