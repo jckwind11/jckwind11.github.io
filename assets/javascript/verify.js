@@ -3,12 +3,10 @@ const token = searchData.get('token');
 const headers = {
     headers: {
         'Token': token,
-        'Access-Control-Allow-Origin': "*",
-        'Access-Control-Allow-Methods': "POST",
-        'Access-Control-Allow-Headers': "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-    }
+    },
+    crossDomain: true
 };
-const body = {};
+const body = JSON.stringify({test: "hehe"});
 const url = `https://dev.cordia.app/v1/user/verify`;
 axios.post(url, body, headers)
     .then(function (response) {
