@@ -1,12 +1,14 @@
 const searchData = new URLSearchParams(window.location.search);
 const token = searchData.get('token');
-alert(token);
-if (token) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        alert(this.status);
-    };
-    xhttp.open("POST", "https://dev.cordia.app/v1/user/verify", true);
-    xhttp.setRequestHeader("Token", token);
-    xhttp.send();
-};
+const headers = { headers: { 'Token' : token } };
+const body = {};
+const url = `https://dev.cordia.app/v1/user/verify`;
+axios.post(url, body, headers)
+.then(function (response) {
+    // handle success
+    console.log(response);
+})
+.catch(function (error) {
+    alert(error);
+    console.log(error);
+})
