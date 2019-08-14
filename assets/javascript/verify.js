@@ -2,8 +2,7 @@ const searchData = new URLSearchParams(window.location.search);
 const token = searchData.get('token');
 const headers = {
     headers: {
-        'Token': token,
-        "Access-Control-Allow-Origin" : "*"
+        'Token': token
     }
 };
 const body = JSON.stringify({"test": "hehe"});
