@@ -1,7 +1,7 @@
 const searchData = new URLSearchParams(window.location.search);
 const token = searchData.get('token');
 if (token) {
-    const xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         alert(this.status);
     };
