@@ -6,7 +6,7 @@ const headers = {
         "Access-Control-Allow-Origin" : "*"
     }
 };
-const body = {};
+const body = JSON.stringify({"test": "hehe"});
 const url = `https://dev.cordia.app/v1/user/verify`;
 axios.post(url, body, headers)
     .then(function (response) {
