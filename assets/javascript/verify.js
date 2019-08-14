@@ -6,7 +6,8 @@ async function main(token) {
     if (token) {
         try {
             await verifyUser(token)
-            window.location.replace("https://cordia.app/verified");
+            document.getElementById("statusLabel").innerHTML = "Successfully Verified!";
+            document.getElementById("reasonLabel").innerHTML = "You can now return to Cordia to continue setting up your account";
         } catch (error) {
             const code = error.response.status;
             document.getElementById("mainIcon").className = "Disk";
