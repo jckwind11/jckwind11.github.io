@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "VLCRW7JPY7.com.Carawind.Cordia",
+        "paths": [ "/verified", "NOT /*" ]
+      }
+    ]
+  }
+}
