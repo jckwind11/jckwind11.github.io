@@ -221,7 +221,6 @@ a:not(.copyright):hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
     height: auto;
 }
 
@@ -229,7 +228,6 @@ a:not(.copyright):hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
     height: auto;
     animation-name: spin;
     animation-duration: 2000ms;
@@ -258,6 +256,8 @@ a:not(.copyright):hover{
 
     .container { padding: 15% 20% 0 0; }
 
+    .Disk, .LoadingDisk { width: 60% }
+
     html { 
         -webkit-background-size: auto;
         background-size: auto 100%; 
@@ -271,6 +271,8 @@ a:not(.copyright):hover{
     .infoLabel { font-size: 0.9em;  }
 
     .container { padding: 10vh 35% 0 0; }
+
+    .Disk, .LoadingDisk { width: 40% }
 
     html { 
         -webkit-background-size: 100%;
@@ -298,7 +300,10 @@ a:not(.copyright):hover{
     .fa, .fab:not(.fa-apple) {
         font-size: 150%;
     }
+
     .TOS-Holder { width: 80%; }
+
+    .Disk, .LoadingDisk { width: 40% }
 
 }
 
@@ -318,6 +323,8 @@ a:not(.copyright):hover{
     .fa, .fab:not(.fa-apple) {
         font-size: 150%;
     }
+
+    .Disk, .LoadingDisk { width: 40% }
 
 }
 
@@ -347,6 +354,7 @@ a:not(.copyright):hover{
 
     .TOS-logo {width: 65%;}
 
+    .Disk, .LoadingDisk { width: 200px }
 }
 
 @media screen and (min-width: 1024px) and (orientation : portrait){
@@ -375,4 +383,6 @@ a:not(.copyright):hover{
     .TOS-Header, .TOS-User-Agreement-Header { font-size: 2.9em; }
 
     .TOS-Preface, .TOS-User-Agreement-Body { font-size: 2em; }
+
+    .Disk, .LoadingDisk { width: 200px }
 }
