@@ -16,6 +16,7 @@ async function main(token) {
     } else {
         document.getElementById("mainIcon").className = "Disk";
         document.getElementById("statusLabel").innerHTML = "Site not found";
+        document.getElementById("reasonLabel").style.display = "none";
     }
 }
 
