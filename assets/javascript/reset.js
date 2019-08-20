@@ -55,7 +55,7 @@ function changePassword(auth, actionCode) {
     }).catch(function (error) {
         document.getElementById("confirmButton").disabled = false;
         document.getElementById("inputField").disabled = false;
-        updateUI("Uh Oh. Something went wrong",
+        updateUI(error.code,
             "Either your password was too weak or your verification token is invalid or expired. Please try to reset the password again", false);
     }).finally(function () {
         document.getElementById("mainIcon").className = "Disk";
