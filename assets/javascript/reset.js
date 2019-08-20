@@ -39,7 +39,7 @@ function handleResetPassword(auth, actionCode) {
             document.getElementById("reasonLabel").innerHTML = "Either your password was too weak or your verification token is invalid or expired. Please try to reset the password again"
         });
     }).catch(function (error) {
-        updateUI("Invalid verification token", "Your verification token is invalid or expired. Please try to reset the password again", false);
+        updateUI("Invalid verification token", error, false);
     });
 }
 
