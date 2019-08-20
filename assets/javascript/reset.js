@@ -33,12 +33,12 @@ function handleResetPassword(auth, actionCode) {
         });
     }).catch(function () {
         updateUI("Invalid verification token", "Your verification token is invalid or expired. Please try to reset the password again", false);
+    }).finally(function() {
+        document.getElementById("mainIcon").className = "Disk"
     });
 }
 
-function updateUI(title, reason, load) {
-    const loading = load == true;
-    document.getElementById("mainIcon").className = (loading) ? "LoadingDisk" : "Disk";
+function updateUI(title, reason) {
     document.getElementById("statusLabel").innerHTML = title;
     document.getElementById("reasonLabel").innerHTML = reason;
 }
@@ -49,13 +49,12 @@ function changePassword(auth, actionCode) {
     document.getElementById("inputField").disabled = true;
     const password = document.getElementById("inputField").value;
     auth.confirmPasswordReset(actionCode, password).then(function () {
-        updateUI("Your password has successfully been changed!",
-            "You can now return to Cordia and login using your new password", false);
+        updateUI("Your password has successfully been changed!", "You can now return to Cordia and login using your new password");
     }).catch(function (error) {
         document.getElementById("confirmButton").disabled = false;
         document.getElementById("inputField").disabled = false;
         const reason = (error.code == 'auth/weak-password') ? "Your password is too weak" : "Your verification token is invalid or expired. Please try to reset the password again";
-        updateUI("Uh Oh. Something went wrong", reason, false);
+        updateUI("Uh Oh. Something went wrong", reason);
     }).finally(function () {
         document.getElementById("mainIcon").className = "Disk";
     });
