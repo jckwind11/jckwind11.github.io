@@ -39,7 +39,7 @@ function handleResetPassword(auth, actionCode) {
 }
 
 function updateUI(title, reason) {
-    document.getElementById("statusLabel").innerHTML = title;
+    if (title != null) { document.getElementById("statusLabel").innerHTML = title };
     document.getElementById("reasonLabel").innerHTML = reason;
 }
 
@@ -53,8 +53,8 @@ function changePassword(auth, actionCode) {
     }).catch(function (error) {
         document.getElementById("confirmButton").disabled = false;
         document.getElementById("inputField").disabled = false;
-        const reason = (error.code == 'auth/weak-password') ? "Your password is too weak" : "Your verification token is invalid or expired. Please try to reset the password again";
-        updateUI("Uh Oh. Something went wrong", reason);
+        const reason = (error.code == 'auth/weak-password') ? "Your password is too weak. " : "Your verification token is invalid or expired. Please try to reset the password again";
+        updateUI(null, reason);
     }).finally(function () {
         document.getElementById("mainIcon").className = "Disk";
     });
