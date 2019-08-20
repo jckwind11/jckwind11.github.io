@@ -45,17 +45,16 @@ function updateUI(title, reason) {
 
 function changePassword(auth, actionCode) {
     document.getElementById("mainIcon").className = "LoadingDisk";
-    document.getElementById("confirmButton").disabled = true;
     document.getElementById("inputField").disabled = true;
+    document.getElementById("confirmButton").removeEventListener("click", function(){ });
     const password = document.getElementById("inputField").value;
     auth.confirmPasswordReset(actionCode, password).then(function () {
-        document.getElementById("confirmButton").removeEventListener("click", function(){ });
         updateUI("Your password has successfully been changed!", "You can now return to Cordia and login using your new password");
     }).catch(function (error) {
-        document.getElementById("confirmButton").disabled = false;
-        document.getElementById("inputField").disabled = false;
         const reason = (error.code == 'auth/weak-password') ? "Your password is too weak. Make sure it's at least 6 characters" : "Your verification token is invalid or expired. Please try to reset the password again";
         updateUI(null, reason);
+        document.getElementById("inputField").disabled = false;
+        document.getElementById("confirmButton").addEventListener("click", function () { changePassword(auth, actionCode); });
     }).finally(function () {
         document.getElementById("mainIcon").className = "Disk";
     });
