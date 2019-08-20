@@ -75,6 +75,18 @@ a.downloadBtn {
     display: inline-block;
 }
 
+a.changePassword {
+    color: #fff;
+    border-radius: 5px;
+    font-family: $sarala;
+    background-color: #2f2fa2;
+    padding: 10px 40px;
+    margin-top: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
 a.downloadBtn2 {
     color: #fff;
     border-radius: 0.2em;
@@ -87,6 +99,17 @@ a.downloadBtn2 {
     text-decoration: none;
     text-align: center;
     display: inline-block;
+}
+
+.newPasswordField {
+    font-family: $sarala;
+    border: solid 1px #F64C72;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background: none;
+    text-align: left;
+    color: inherit;
+    background-color: #DCDCDC;
 }
 
 .redditButton, .twitterButton, .linkedButton, .mailButton {
@@ -252,11 +275,13 @@ a:not(.copyright):hover{
 
     .welcome {  font-size: 2em; }
 
-    .infoLabel { font-size: 0.9em;  }
+    .infoLabel{ font-size: 0.9em;  }
 
     .container { padding: 15% 20% 0 0; }
 
     .Disk, .LoadingDisk { width: 60% }
+
+    .newPasswordField { width: 60%; font-size: 0.9em; }
 
     html { 
         -webkit-background-size: auto;
@@ -273,6 +298,8 @@ a:not(.copyright):hover{
     .container { padding: 10vh 35% 0 0; }
 
     .Disk, .LoadingDisk { width: 40% }
+
+    .newPasswordField { width: 60%; font-size: 0.9em; }
 
     html { 
         -webkit-background-size: 100%;
@@ -292,6 +319,8 @@ a:not(.copyright):hover{
     .container { padding: 7.5% 35vw 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
+
+    .newPasswordField { width: 60%; font-size: 1.3em; }
 
     html{ 
         -webkit-background-size: auto;
@@ -316,6 +345,8 @@ a:not(.copyright):hover{
 
     .downloadBtn { font-size: 1.2em;}
 
+    .newPasswordField { width: 60%; font-size: 1em; }
+
     html{ 
         -webkit-background-size: auto;
         background-size: auto 100sv;
@@ -336,6 +367,8 @@ a:not(.copyright):hover{
     .container { padding: 10% 50% 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
+
+    .newPasswordField { width: 30%; font-size: 1.1em; }
 
     html{ 
         -webkit-background-size: auto;
@@ -365,6 +398,8 @@ a:not(.copyright):hover{
     .container { padding: 20% 35vw 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
+
+    .newPasswordField { width: 60%; font-size: 1.5em; }
 
     html{ 
         -webkit-background-size: auto;

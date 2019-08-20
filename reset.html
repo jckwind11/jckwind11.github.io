@@ -9,12 +9,14 @@ layout: default
     <h1 class="TOS-Header" id="statusLabel">Hang tight while we get your account</h1>
     <hr class="divider divider-TOS">
     <p class="TOS-Preface" id="reasonLabel"> We're sending your reset request to our servers </p>
-    <input type="password" id="pass" name="password">
-    <br><br>
-    <hr class="divider divider-TOS">
+    <input type="password" class="newPasswordField" placeholder="New password" id="inputField" hidden=true>
+    <br>
+    <div class="buttonHolder" id="confirmButton" hidden=true>
+      <a href="https://testflight.apple.com/join/PljUX6Cv" class="changePassword">Confirm</a>
+      <br>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
     <script src="/assets/javascript/reset.js"></script>
-    <br>
   </div>
 </html>
