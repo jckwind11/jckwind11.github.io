@@ -53,7 +53,7 @@ function changePassword(auth, actionCode) {
     }).catch(function (error) {
         document.getElementById("confirmButton").disabled = false;
         document.getElementById("inputField").disabled = false;
-        const reason = (error.code == 'auth/weak-password') ? "Your password is too weak. " : "Your verification token is invalid or expired. Please try to reset the password again";
+        const reason = (error.code == 'auth/weak-password') ? "Your password is too weak. Make sure it's at least 6 characters" : "Your verification token is invalid or expired. Please try to reset the password again";
         updateUI(null, reason);
     }).finally(function () {
         document.getElementById("mainIcon").className = "Disk";
