@@ -23,23 +23,18 @@ document.addEventListener('DOMContentLoaded', function () {
 function handleResetPassword(auth, actionCode) {
     document.getElementById("mainIcon").className = "LoadingDisk";
     auth.verifyPasswordResetCode(actionCode).then(function (email) {
-        document.getElementById("mainIcon").className = "Disk";
-        document.getElementById("statusLabel").innerHTML = `Change password for <em>${email}</em>`;
-        document.getElementById("reasonLabel").innerHTML = "Please enter a new password below";
-        // TODO: Show the reset screen with the user's email and ask the user for
-        // the new password.
-
+        updateUI(`Change password for <em>${email}</em>`, "Please enter a new password below", false);
         // Save the new password.
-        auth.confirmPasswordReset(actionCode, newPassword).then(function (resp) {
-            document.getElementById("statusLabel").innerHTML = "Your password has successfully been changed!";
-            document.getElementById("reasonLabel").innerHTML = "You can now return to Cordia and login using your new password";
+        auth.confirmPasswordReset(actionCode, "hehehe").then(function (resp) {
+            updateUI("Your password has successfully been changed!",
+                "You can now return to Cordia and login using your new password", false);
         }).catch(function (error) {
-            document.getElementById("mainIcon").className = "Disk";
-            document.getElementById("statusLabel").innerHTML = "Uh Oh. Something went wrong";
-            document.getElementById("reasonLabel").innerHTML = "Either your password was too weak or your verification token is invalid or expired. Please try to reset the password again"
+            updateUI("Uh Oh. Something went wrong",
+                "Either your password was too weak or your verification token is invalid or expired. Please try to reset the password again", false);
         });
     }).catch(function (error) {
-        updateUI("Invalid verification token", error, false);
+        updateUI("Invalid verification token",
+            "Your verification token is invalid or expired. Please try to reset the password again", false);
     });
 }
 
