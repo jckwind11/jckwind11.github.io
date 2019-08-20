@@ -26,7 +26,7 @@ function handleResetPassword(auth, actionCode) {
     document.getElementById("mainIcon").className = "LoadingDisk";
     auth.verifyPasswordResetCode(actionCode).then(function (email) {
         updateUI(`Change password for <em>${email}</em>`, "Please enter a new password below", false);
-        document.getElementById("confirmButton").hidden = false;
+        document.getElementById("buttonHolder").hidden = false;
         document.getElementById("inputField").hidden = false;
         document.getElementById("confirmButton").addEventListener("click", function () {
             changePassword(auth, actionCode);
