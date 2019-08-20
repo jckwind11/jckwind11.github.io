@@ -49,6 +49,7 @@ function changePassword(auth, actionCode) {
     document.getElementById("inputField").disabled = true;
     const password = document.getElementById("inputField").value;
     auth.confirmPasswordReset(actionCode, password).then(function () {
+        document.getElementById("confirmButton").removeEventListener("click", function(){ });
         updateUI("Your password has successfully been changed!", "You can now return to Cordia and login using your new password");
     }).catch(function (error) {
         document.getElementById("confirmButton").disabled = false;
