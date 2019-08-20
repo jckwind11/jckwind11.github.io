@@ -32,7 +32,7 @@ function handleResetPassword(auth, actionCode) {
             changePassword(auth, actionCode);
         });
     }).catch(function () {
-        updateUI("Invalid verification token", "Your verification token is invalid or expired. Please try to reset the password again", false);
+        updateUI("Invalid token", "Your verification token is invalid or expired. Please try to reset the password again", false);
     }).finally(function() {
         document.getElementById("mainIcon").className = "Disk"
     });
