@@ -24,7 +24,7 @@ async function main(token) {
 async function verifyUser(token) {
     const headers = { headers: { 'Token': token } };
     const body = JSON.stringify({});
-    const url = 'https://dev.cordia.app/v1/user/verify';
+    const url = 'https://api.cordia.app/v1/user/verify';
     return axios.post(url, body, headers);
 }
 
