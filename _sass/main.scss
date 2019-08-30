@@ -206,7 +206,7 @@ a:not(.copyright):hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 35%;
     height: auto;
 }
 
@@ -308,6 +308,7 @@ a:not(.copyright):hover{
     .tosButton { 
         font-size: 0.95em;
     }
+    .TOS-logo {width: 20%;}
 
 }
 
@@ -334,6 +335,8 @@ a:not(.copyright):hover{
 
     .Disk, .LoadingDisk { width: 40% }
 
+    .TOS-logo {width: 25%;}
+
 }
 
 @media screen and (min-width : 768px) and (max-width : 812px) and (orientation : landscape){
@@ -357,6 +360,7 @@ a:not(.copyright):hover{
 
     .Disk, .LoadingDisk { width: 40% }
 
+    .TOS-logo {width: 25%;}
 }
 
 @media screen and (min-width: 1024px) {
@@ -385,7 +389,7 @@ a:not(.copyright):hover{
 
     .TOS-Preface, .TOS-User-Agreement-Body { font-size: 1.3em; }
 
-    .TOS-logo {width: 65%;}
+    .TOS-logo {width: 25%;}
 
     .Disk, .LoadingDisk { width: 200px }
 }
@@ -412,6 +416,8 @@ a:not(.copyright):hover{
     .fa, .fab:not(.fa-apple) {
         font-size: 150%;
     }
+
+    .TOS-logo {width: 25%;}
 
     .TOS-Holder { width: 75%; }
 
