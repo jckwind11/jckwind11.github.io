@@ -1,2 +1,3 @@
-# CordiaWebsite
-the static page of cordia lol
+
+# jckwind11.github.io
+My website to showcase who I am
