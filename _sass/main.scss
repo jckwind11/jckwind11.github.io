@@ -13,9 +13,11 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .professional-bio {
@@ -26,7 +28,7 @@ body {
 
 #home {
     // background-image: url('/assets/images/ShowcaseV1.png');
-    background-color: #DCDCDC;
+    background-color: #696969;
     background-position: center;
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -59,9 +61,13 @@ html {
 }
 
 .welcome {
-    font-weight: 500;
-    color: #000000;
-    // text-shadow: 0px 0px 0.3em #000000;
+    font-size: auto;
+    margin-top: 0;
+    text-align: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
 
 .infoLabel {
@@ -192,7 +198,7 @@ a:not(.copyright):hover{
     font-size: auto;
     margin-left: auto;
     margin-right: auto;
-    color: gray;
+    color: white;
     display: inline-block;
     padding: 50px;
 }
@@ -359,7 +365,7 @@ a:not(.copyright):hover{
 }
 
 @media screen and (min-width: 1024px) {
-    .welcome {  font-size: 2.5em;  }
+    .welcome {  font-size: 4em;  }
 
     .infoLabel { font-size: 1.2em; }
 
