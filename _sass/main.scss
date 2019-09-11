@@ -12,8 +12,21 @@ body {
     min-height: 110vh;
 }
 
+.container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.professional-bio {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #home {
-    background-image: url('/assets/images/ShowcaseV1.png');
+    // background-image: url('/assets/images/ShowcaseV1.png');
+    background-color: #DCDCDC;
     background-position: center;
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -37,7 +50,8 @@ html {
 }
 
 .divider-Home {
-    margin-left: 0;
+    width: 20%;
+    display: inline-block;
 }
 
 .divider-User-Agreement {
@@ -46,12 +60,12 @@ html {
 
 .welcome {
     font-weight: 500;
-    color: #ffffff;
-    text-shadow: 0px 0px 0.3em #000000;
+    color: #000000;
+    // text-shadow: 0px 0px 0.3em #000000;
 }
 
 .infoLabel {
-    color: #ffffff;
+    color: #000000;
     text-shadow: 0px 0px 0.7em #000000;
     font-weight: 500;
     line-height: 2em;
@@ -59,28 +73,16 @@ html {
     margin: 20px 0;
 }
     
-.site-header { display: none}
+// .site-header { display: none}
 
 a.downloadBtn {
-    color: #fff;
+    color: #000000;
     border-radius: 0.2em;
     font-family: $sarala;
     border: 0;
     background-color: #F64C72;
     box-shadow: 0px 0px 2em #000000;
     padding: 14px 40px;
-    margin-top: 1.4em;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-}
-
-a.changePassword {
-    color: #fff;
-    border-radius: 5px;
-    font-family: $sarala;
-    background-color: #2f2fa2;
-    padding: 10px 40px;
     margin-top: 1.4em;
     text-decoration: none;
     text-align: center;
@@ -188,10 +190,11 @@ a:not(.copyright):hover{
 
 .TOS-Preface {
     font-size: auto;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     color: gray;
+    display: inline-block;
+    padding: 50px;
 }
 
 .TOS-Holder {
@@ -277,8 +280,6 @@ a:not(.copyright):hover{
 
     .infoLabel{ font-size: 0.9em;  }
 
-    .container { padding: 15% 20% 0 0; }
-
     .Disk, .LoadingDisk { width: 60% }
 
     .newPasswordField { width: 60%; font-size: 0.9em; }
@@ -294,8 +295,6 @@ a:not(.copyright):hover{
     .welcome {  font-size: 2em; }
 
     .infoLabel { font-size: 0.9em;  }
-
-    .container { padding: 10vh 35% 0 0; }
 
     .Disk, .LoadingDisk { width: 40% }
 
@@ -316,8 +315,6 @@ a:not(.copyright):hover{
     .welcome {  font-size: 2.7em;  }
 
     .infoLabel { font-size: 1.4em; }
-
-    .container { padding: 7.5% 35vw 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
 
@@ -344,8 +341,6 @@ a:not(.copyright):hover{
 
     .infoLabel { font-size: 1.1em; }
 
-    .container { padding: 7.5% 35vw 0px 13%; }
-
     .downloadBtn { font-size: 1.2em;}
 
     .newPasswordField { width: 60%; font-size: 1em; }
@@ -367,8 +362,6 @@ a:not(.copyright):hover{
     .welcome {  font-size: 2.5em;  }
 
     .infoLabel { font-size: 1.2em; }
-
-    .container { padding: 10% 50% 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
 
@@ -398,8 +391,6 @@ a:not(.copyright):hover{
     .welcome {  font-size: 3em;  }
 
     .infoLabel { font-size: 1.6em; }
-
-    .container { padding: 20% 35vw 0px 13%; }
 
     .downloadBtn { font-size: 1.5em;}
 
