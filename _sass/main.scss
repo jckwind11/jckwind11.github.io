@@ -27,13 +27,21 @@ body {
 }
 
 #home {
-    // background-image: url('/assets/images/ShowcaseV1.png');
     background-color: #696969;
     background-position: center;
     background-attachment: fixed;
     background-repeat:no-repeat;
     margin-bottom: 10px;
 }
+
+#dad {
+    background-color: #89CFF0;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    margin-bottom: 10px;
+}
+
 html {
     background-color: #2f2fa2;
 }
@@ -101,7 +109,7 @@ a.downloadBtn2 {
     font-family: $sarala;
     border: 0;
     background-color: #89CFF0;
-    box-shadow: 0px 0px 2em #000000;
+    box-shadow: 0px 0px 1em #000000;
     padding: 14px 40px;
     margin-top: 1.4em;
     text-decoration: none;
