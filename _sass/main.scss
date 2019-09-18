@@ -1,4 +1,5 @@
 $sarala: 'Sarala', sans-serif;
+$sarala-bold: 'Sarala-bold', sans-serif;
 
 body {
     font-family: $sarala;
@@ -10,36 +11,6 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     min-height: 110vh;
-}
-
-.container {
-   width: 100%;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.professional-bio {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#home {
-    background-color: #696969;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    margin-bottom: 10px;
-}
-
-#dad {
-    background-color: #89CFF0;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    margin-bottom: 10px;
 }
 
 html {
@@ -59,38 +30,60 @@ html {
     border: 0;
 }
 
-.divider-Home {
-    width: 20%;
-    display: inline-block;
-}
-
 .divider-User-Agreement {
     width: 50%;
 }
 
 .welcome {
-    font-size: auto;
-    margin-top: 0;
-    text-align: left;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0px 0px 0.3em #000000;
 }
 
 .infoLabel {
-    color: #000000;
+    color: #ffffff;
     text-shadow: 0px 0px 0.7em #000000;
-    font-weight: 500;
-    line-height: 2em;
+    font-weight: 1000;
     letter-spacing: 1px;
     margin: 20px 0;
+    text-align: left;
+    font-family: $sarala-bold;
 }
-    
-// .site-header { display: none}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    // background-color: black;
+    text-align: center;
+    min-height: 100vh;
+}
+
+// .container-flipped {
+//     transform: scaleX(-1)
+// }
+ 
+.screenshot-info {
+    width: 30%;
+    padding: 0 10%;
+}
+
+.screenshot {
+    width: 40%;
+    padding: 0 12%;
+    height: auto;
+}
+
+.screenshot-flipped {
+    width: 25%;
+    padding: 0 12%;
+    height: auto;
+    order: -1;
+}
 
 a.downloadBtn {
-    color: #000000;
+    color: #fff;
     border-radius: 0.2em;
     font-family: $sarala;
     border: 0;
@@ -103,12 +96,24 @@ a.downloadBtn {
     display: inline-block;
 }
 
+a.changePassword {
+    color: #fff;
+    border-radius: 5px;
+    font-family: $sarala;
+    background-color: #2f2fa2;
+    padding: 10px 40px;
+    margin-top: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
 a.downloadBtn2 {
     color: #fff;
     border-radius: 0.2em;
     font-family: $sarala;
     border: 0;
-    background-color: #89CFF0;
+    background-color: #F64C72;
     box-shadow: 0px 0px 1em #000000;
     padding: 14px 40px;
     margin-top: 1.4em;
@@ -204,11 +209,10 @@ a:not(.copyright):hover{
 
 .TOS-Preface {
     font-size: auto;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    display: inline-block;
-    padding: 50px;
+    color: gray;
 }
 
 .TOS-Holder {
@@ -298,10 +302,13 @@ a:not(.copyright):hover{
 
     .newPasswordField { width: 60%; font-size: 0.9em; }
 
-    html { 
-        -webkit-background-size: auto;
-        background-size: auto 100%; 
-    }
+    .container { display: inline-block; }
+
+    .screenshot-info { width: 95%; margin: 0 auto; padding: 0}
+
+    .screenshot { width: 75%; margin: auto; padding: 0}
+
+    .screenshot-flipped { width: 75%; margin: auto; padding: 0; order: 1;}
 
 }
 
@@ -314,14 +321,18 @@ a:not(.copyright):hover{
 
     .newPasswordField { width: 60%; font-size: 0.9em; }
 
-    html { 
-        -webkit-background-size: 100%;
-        background-size: auto 100%; 
-    }
     .tosButton { 
         font-size: 0.95em;
     }
     .TOS-logo {width: 20%;}
+
+    .container { display: inline-block; }
+
+    .screenshot-info { width: 70%; margin: 0 auto; padding: 0}
+
+    .screenshot { width: 50%; margin: auto; padding: 0}
+
+    .screenshot-flipped { width: 50%; margin: auto; padding: 0; order: 1;}
 
 }
 
@@ -334,10 +345,6 @@ a:not(.copyright):hover{
 
     .newPasswordField { width: 60%; font-size: 1.3em; }
 
-    html{ 
-        -webkit-background-size: auto;
-        background-size: auto 100sv;
-    }
     .fa, .fab:not(.fa-apple) {
         font-size: 150%;
     }
@@ -348,6 +355,13 @@ a:not(.copyright):hover{
 
     .TOS-logo {width: 25%;}
 
+    .container { display: inline-block; }
+
+    .screenshot-info { width: 70%; margin: 0 auto; padding: 0}
+
+    .screenshot { width: 50%; margin: auto; padding: 0}
+
+    .screenshot-flipped { width: 50%; margin: auto; padding: 0; order: 1;}
 }
 
 @media screen and (min-width : 768px) and (max-width : 812px) and (orientation : landscape){
@@ -359,10 +373,6 @@ a:not(.copyright):hover{
 
     .newPasswordField { width: 60%; font-size: 1em; }
 
-    html{ 
-        -webkit-background-size: auto;
-        background-size: auto 100sv;
-    }
     .fa, .fab:not(.fa-apple) {
         font-size: 150%;
     }
@@ -370,21 +380,24 @@ a:not(.copyright):hover{
     .Disk, .LoadingDisk { width: 40% }
 
     .TOS-logo {width: 25%;}
+
+    .container { display: inline-block; }
+
+    .screenshot-info { width: 70%; margin: 0 auto; padding: 0}
+
+    .screenshot { width: 50%; margin: auto; padding: 0}
+
+    .screenshot-flipped { width: 50%; margin: auto; padding: 0; order: 1;}
 }
 
 @media screen and (min-width: 1024px) {
-    .welcome {  font-size: 4em;  }
+    .welcome {  font-size: 2.5em;  }
 
-    .infoLabel { font-size: 1.2em; }
+    .infoLabel { font-size: 5em; }
 
     .downloadBtn { font-size: 1.5em;}
 
     .newPasswordField { width: 30%; font-size: 1.1em; }
-
-    html{ 
-        -webkit-background-size: auto;
-        background-size: auto 100sv;
-    }
 
     .fa, .fab:not(.fa-apple) {
         font-size: 120%;
@@ -399,6 +412,8 @@ a:not(.copyright):hover{
     .TOS-logo {width: 25%;}
 
     .Disk, .LoadingDisk { width: 200px }
+
+    .screenshot, .screenshot-info { display: inline-block;}
 }
 
 @media screen and (min-width: 1024px) and (orientation : portrait){
@@ -410,10 +425,6 @@ a:not(.copyright):hover{
 
     .newPasswordField { width: 60%; font-size: 1.5em; }
 
-    html{ 
-        -webkit-background-size: auto;
-        background-size: auto 100sv;
-    }
     .tosButton { 
         font-size: 1.5em;
     }
@@ -431,4 +442,12 @@ a:not(.copyright):hover{
     .TOS-Preface, .TOS-User-Agreement-Body { font-size: 2em; }
 
     .Disk, .LoadingDisk { width: 200px }
+
+    .container { display: inline-block; }
+
+    .screenshot-info { width: 80%; margin: 0 auto; padding: 0}
+
+    .screenshot { width: 80%; margin: auto; padding: 0}
+
+    .screenshot-flipped { width: 60%; margin: auto; padding: 0; order: 1;}
 }
