@@ -1,8 +1,8 @@
-$sarala: 'Sarala', sans-serif;
-$sarala-bold: 'Sarala-bold', sans-serif;
+$cairo: 'Cairo', sans-serif;
+$cairo-bold: 'Cairo-bold', sans-serif;
 
 body {
-    font-family: $sarala;
+    font-family: $cairo;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 html {
-    background-color: #1a4f84;
+    background-color: #060606;
 }
 
 #section {
@@ -37,22 +37,9 @@ html {
 
 .header-button {
     color: #000000;
-    font-family: $sarala;
+    font-family: $cairo;
     text-decoration: none;
     padding: 0 10%;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #C0C0C0;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    top: 0;
-    border: 1px solid #000000;  
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
 .container {
@@ -60,7 +47,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90%;
+    height: 100%;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -86,13 +73,13 @@ html {
     letter-spacing: 1px;
     margin: 20px 0;
     text-align: left;
-    font-family: $sarala-bold;
+    font-family: $cairo-bold;
 }
 
 a.downloadBtn {
     color: #fff;
     border-radius: 0.2em;
-    font-family: $sarala;
+    font-family: $cairo;
     border: 0;
     background-color: #F64C72;
     box-shadow: 0px 0px 2em #000000;
@@ -106,7 +93,7 @@ a.downloadBtn {
 a.changePassword {
     color: #fff;
     border-radius: 5px;
-    font-family: $sarala;
+    font-family: $cairo;
     background-color: #2f2fa2;
     padding: 10px 40px;
     margin-top: 1.4em;
@@ -118,7 +105,7 @@ a.changePassword {
 a.downloadBtn2 {
     color: #fff;
     border-radius: 0.2em;
-    font-family: $sarala;
+    font-family: $cairo;
     border: 0;
     background-color: #F64C72;
     box-shadow: 0px 0px 1em #000000;
@@ -127,17 +114,6 @@ a.downloadBtn2 {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-}
-
-.newPasswordField {
-    font-family: $sarala;
-    border: solid 1px #F64C72;
-    border-radius: 5px;
-    padding: 5px 5px;
-    background: none;
-    text-align: left;
-    color: inherit;
-    background-color: #DCDCDC;
 }
 
 .redditButton, .twitterButton, .linkedButton, .mailButton {
@@ -181,7 +157,7 @@ a.downloadBtn2 {
     left: 0;
 }
 
-.footer {
+.header {
     right: 0;
     left: 0;
     padding: 1rem;
@@ -196,7 +172,7 @@ a:not(.copyright):hover{
 .footerLabel{
     color: #fff;
     border:none;
-    font-family: $sarala;
+    font-family: $cairo;
     margin-left: 15px;
     margin-right: 15px;
     padding-top: 1em;
@@ -268,33 +244,6 @@ a:not(.copyright):hover{
     margin-right: auto;
 }
 
-.Disk { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-
-.LoadingDisk {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    animation-name: spin;
-    animation-duration: 2000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; 
-    animation-direction: alternate;
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(1440deg);
-    }
-}
 //Different Screen Sizes Info
 
 //iphone landscape
